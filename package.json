@@ -1,0 +1,16 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^1.8.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build-css": "npx tailwindcss build tailwind/src.css -o static/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
