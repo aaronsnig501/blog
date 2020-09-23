@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-22 23:27+0000\n"
+"POT-Creation-Date: 2020-09-23 16:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,4 +20,40 @@ msgstr ""
 
 #: home/templates/index.html:50
 msgid "Aaron Sinnott"
+msgstr "Aaron Sinnott"
+
+#: home/templates/index.html:71
+msgid "Skills"
+msgstr "Habilidades"
+
+#: home/templates/index.html:90
+msgid "Backend & Databases"
+msgstr "Back-end e Bancos de Dados"
+
+#: home/templates/index.html:92
+msgid "I have years of experience working with business logic and various types of database structures"
+msgstr "Tenho anos de experiência trabalhando com lógica de negócios e vários tipos de estruturas de banco de dados"
+
+#: home/templates/index.html:112
+msgid "Cloud-based Platforms"
+msgstr "Plataformas Baseadas em Nuvem"
+
+#: home/templates/index.html:114
+msgid "I work with both AWS and Google Cloud platforms for hosting projects, databases and more"
+msgstr "Eu trabalho com as plataformas AWS e Google Cloud para projetos de hospedagem, bancos de dados e muito mais"
+
+#: home/templates/index.html:134
+msgid "Translations & i18n"
 msgstr ""
+
+#: home/templates/index.html:135
+msgid "Making sure that sites are usable outside of the English speaking market is important"
+msgstr "Certificar-se de que os sites podem ser usados fora do mercado de língua inglesa é importante"
+
+#: home/templates/index.html:159
+msgid "Mentoring & Guidance"
+msgstr "Mentoria e Orientação"
+
+#: home/templates/index.html:160
+msgid "I enjoy helping less experienced developers to reach their potential"
+msgstr "Gosto de ajudar desenvolvedores menos experientes a alcançar seu potencial"
