@@ -38,7 +38,7 @@
         </div>
 
         <div
-          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0"
           id="nav-content"
         ></div>
       </nav>
@@ -67,13 +67,14 @@
           </svg>
         </a>
       </section>
-      <section class="bg-cornflowerblue-50 h-full pt-48">
-        <div class="flex flex-col items-center lg:flex-row lg:justify-around">
+      <section class="bg-cornflowerblue-50 pt-20 px-6">
+        <h2 class="text-2xl mb-4">{% trans 'Skills' %}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div
-            class="border-steelblue-200 shadow-lg w-64 border-2 text-center py-4 lg:p-12 mb-4 rounded-md"
+            class="card lg:p-8 lg:min-h-90"
           >
             <svg
-              class="text-steelblue-900 w-24 border-solid border-4 border-steelblue-900 rounded-full mx-auto"
+              class="text-steelblue-900 w-24 border-solid border-2 border-steelblue-900 rounded-full mx-auto"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="-17.5 -17.5 60 60"
@@ -86,13 +87,16 @@
                 d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
               />
             </svg>
-            <h2 class="text-2xl mt-2">Databases</h2>
+            <h3 class="text-2xl mt-2">{% trans 'Backend & Databases' %}</h3>
+            <p>
+              {% trans 'I have years of experience working with business logic and various types of database structures' %}
+            </p>
           </div>
           <div
-            class="border-steelblue-200 shadow-lg w-64 border-2 text-center py-4 lg:p-12 mb-4 rounded-md"
+            class="card lg:p-8 lg:m-auto lg:min-h-90"
           >
             <svg
-              class="text-steelblue-900 w-24 border-solid border-4 border-steelblue-900 rounded-full mx-auto"
+              class="text-steelblue-900 w-24 border-solid border-2 border-steelblue-900 rounded-full mx-auto"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="-17.5 -17.5 60 60"
@@ -105,32 +109,16 @@
                 d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
               />
             </svg>
-            <h2 class="text-2xl mt-2">AWS & Gcloud</h2>
+            <h3 class="text-2xl mt-2">{% trans 'Cloud-based Platforms' %}</h3>
+            <p>
+              {% trans 'I work with both AWS and Google Cloud platforms for hosting projects, databases and more' %}
+            </p>
           </div>
           <div
-            class="border-steelblue-200 shadow-lg w-64 border-2 text-center py-4 lg:p-8 mb-4 rounded-md"
+            class="card lg:p-8 lg:m-auto lg:min-h-90"
           >
             <svg
-              class="text-steelblue-900 w-24 border-solid border-4 border-steelblue-900 rounded-full mx-auto"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="-17.5 -17.5 60 60"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-              />
-            </svg>
-            <h2 class="text-2xl mt-2">Mobile-first Development</h2>
-          </div>
-          <div
-            class="border-steelblue-200 shadow-lg w-64 border-2 text-center py-4 lg:p-8 mb-4 rounded-md"
-          >
-            <svg
-              class="text-steelblue-900 w-24 border-solid border-4 border-steelblue-900 rounded-full mx-auto"
+              class="text-steelblue-900 w-24 border-solid border-2 border-steelblue-900 rounded-full mx-auto"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="-17.5 -17.5 60 60"
@@ -143,7 +131,33 @@
                 d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
               />
             </svg>
-            <h2 class="text-2xl mt-2">I18n & Translations</h2>
+            <h3 class="text-2xl mt-2">{% trans 'Translations & i18n' %}</h3>
+            <p>{% trans 'Making sure that sites are usable outside of the English speaking market is important' %}</p>
+          </div>
+          <div
+            class="card lg:p-8 lg:m-auto lg:min-h-90"
+          >
+            <svg
+              class="text-steelblue-900  w-24 border-solid border-2 border-steelblue-900 rounded-full mx-auto"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="-17.5 -17.5 60 60"
+              stroke="currentColor"
+            >
+              <path fill="#fff" d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path
+                fill="#fff"
+                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+              />
+            </svg>
+            <h3 class="text-2xl mt-2">{% trans 'Mentoring & Guidance' %}</h3>
+            <p class="min-h-56">{% trans 'I enjoy helping less experienced developers to recognise their potential' %}</p>
           </div>
         </div>
       </section>
