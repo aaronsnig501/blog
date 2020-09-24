@@ -251,8 +251,16 @@
               <div
                 class="h-full w-full bg-steelblue-100 flex items-center text-center"
               >
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-                  <div class="portfolio-card lg:mx-40 lg:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+                  <!-- prettier-ignore -->
+                  <div
+                    class="portfolio-card lg:mx-24 lg:p-8"
+                    style="
+                      background-image: url({%static 'images/coding-screen.jpg'%});
+                      background-size: cover;
+                    "
+                  ></div>
+                  <div class="portfolio-card lg:mx-24 lg:p-8">
                     <h4 class="text-2xl mt-2 font-bold">
                       {% trans 'Role:' %}
                       <span class="font-normal">Mentor</span>
@@ -262,7 +270,7 @@
                       {% trans 'After having worked as a programme developer in Code Institute, I moved abroad to be with my then girlfriend and now wife. Mentoring allowed me to continue working with students and helping to guide them through their learning and empower them to create the strongest possible portfolio to help launch their new career in software development' %}
                     </p>
                   </div>
-                  <div class="portfolio-card lg:mx-40 lg:p-8">
+                  <div class="portfolio-card lg:mx-24 lg:p-8">
                     <h4 class="text-2xl mt-2 font-bold">
                       {% trans 'Description:' %}
                     </h4>
