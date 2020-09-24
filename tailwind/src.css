@@ -5,3 +5,11 @@
 .card {
   @apply m-auto min-h-90 mb-4 border-steelblue-200 shadow-lg w-64 border-2 text-center p-4 rounded-md;
 }
+
+.portfolio-card {
+  @apply m-6 mb-4 border-steelblue-200 shadow-lg border-2 text-center p-4 rounded-md;
+}
+
+.panel {
+  @apply min-h-90 mb-4 border-steelblue-200 shadow-lg border-2 p-4 rounded-md;
+}
