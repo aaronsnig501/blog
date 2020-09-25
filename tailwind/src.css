@@ -14,21 +14,21 @@
   @apply min-h-90 mb-4 border-steelblue-200 shadow-lg border-2 p-4 rounded-md;
 }
 
-.carousel-open:checked + .carousel-item {
+.ci-carousel-open:checked + .ci-carousel-item {
   position: static;
   opacity: 100;
 }
-.carousel-item {
+.ci-carousel-item {
   -webkit-transition: opacity 0.6s ease-out;
   transition: opacity 0.6s ease-out;
 }
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3,
-#carousel-4:checked ~ .control-4 {
+#ci-carousel-1:checked ~ .ci-control-1,
+#ci-carousel-2:checked ~ .ci-control-2,
+#ci-carousel-3:checked ~ .ci-control-3,
+#ci-carousel-4:checked ~ .ci-control-4 {
   display: block;
 }
-.carousel-indicators {
+.ci-carousel-indicators {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -39,25 +39,73 @@
   text-align: center;
   z-index: 10;
 }
-#carousel-1:checked
-  ~ .control-1
-  ~ .carousel-indicators
+#ci-carousel-1:checked
+  ~ .ci-control-1
+  ~ .ci-carousel-indicators
   li:nth-child(1)
-  .carousel-bullet,
-#carousel-2:checked
-  ~ .control-2
-  ~ .carousel-indicators
+  .ci-carousel-bullet,
+#ci-carousel-2:checked
+  ~ .ci-control-2
+  ~ .ci-carousel-indicators
   li:nth-child(2)
-  .carousel-bullet,
-#carousel-3:checked
-  ~ .control-3
-  ~ .carousel-indicators
+  .ci-carousel-bullet,
+#ci-carousel-3:checked
+  ~ .ci-control-3
+  ~ .ci-carousel-indicators
   li:nth-child(3)
-  .carousel-bullet,
-#carousel-4:checked
-  ~ .control-4
-  ~ .carousel-indicators
+  .ci-carousel-bullet,
+#ci-carousel-4:checked
+  ~ .ci-control-4
+  ~ .ci-carousel-indicators
   li:nth-child(4)
-  .carousel-bullet {
+  .ci-carousel-bullet {
+  color: #2b6cb0; /*Set to match the Tailwind colour you want the active one to be */
+}
+
+.de-carousel-open:checked + .de-carousel-item {
+  position: static;
+  opacity: 100;
+}
+.de-carousel-item {
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+#de-carousel-1:checked ~ .de-control-1,
+#de-carousel-2:checked ~ .de-control-2,
+#de-carousel-3:checked ~ .de-control-3,
+#de-carousel-4:checked ~ .de-control-4 {
+  display: block;
+}
+.de-carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+#de-carousel-1:checked
+  ~ .de-control-1
+  ~ .de-carousel-indicators
+  li:nth-child(1)
+  .de-carousel-bullet,
+#de-carousel-2:checked
+  ~ .de-control-2
+  ~ .de-carousel-indicators
+  li:nth-child(2)
+  .de-carousel-bullet,
+#de-carousel-3:checked
+  ~ .de-control-3
+  ~ .de-carousel-indicators
+  li:nth-child(3)
+  .de-carousel-bullet,
+#de-carousel-4:checked
+  ~ .de-control-4
+  ~ .de-carousel-indicators
+  li:nth-child(4)
+  .de-carousel-bullet {
   color: #2b6cb0; /*Set to match the Tailwind colour you want the active one to be */
 }

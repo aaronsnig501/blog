@@ -1,0 +1,226 @@
+{% load static %}{% load i18n %}
+<div class="de-carousel relative bg-white">
+  <div class="de-carousel-inner relative overflow-hidden w-full">
+    <input
+      class="de-carousel-open"
+      type="radio"
+      id="de-carousel-1"
+      name="de-carousel"
+      aria-hidden="true"
+      hidden=""
+      checked="checked"
+    />
+    <div class="de-carousel-item absolute opacity-0" style="height: 50vh">
+      <div
+        class="h-full w-full flex items-center justify-center bg-cornflowerblue-50 text-white text-5xl text-center"
+      >
+        <a href="https://codeinstitute.net" target="_blank">
+          <img class="w-64 block" src="{% static 'images/decyphr.jpg' %}" />
+        </a>
+      </div>
+    </div>
+    <label
+      for="de-carousel-4"
+      class="prev de-control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+      >‹</label
+    >
+    <label
+      for="de-carousel-2"
+      class="next de-control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+      >›</label
+    >
+
+    <input
+      class="de-carousel-open"
+      type="radio"
+      id="de-carousel-2"
+      name="de-carousel"
+      aria-hidden="true"
+      hidden=""
+    />
+    <div class="de-carousel-item absolute opacity-0" style="height: 50vh">
+      <div
+        class="h-full w-full bg-cornflowerblue-50 flex items-center text-center"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+          <!-- prettier-ignore -->
+          <div
+            class="portfolio-card lg:mx-24 lg:p-8"
+            style="
+              background-image: url({%static 'images/coding-screen.jpg'%});
+              background-size: cover;
+            "
+          ></div>
+          <div class="portfolio-card lg:mx-24 lg:p-8">
+            <h4 class="text-2xl mt-2 font-bold">
+              {% trans 'Role:' %}
+              <span class="font-normal">Mentor</span>
+            </h4>
+            <p class="flex pt-6">
+              <!-- prettier-ignore -->
+              {% trans 'After having worked as a programme developer in Code Institute, I moved abroad to be with my then girlfriend and now wife. Mentoring allowed me to continue working with students and helping to guide them through their learning and empower them to create the strongest possible portfolio to help launch their new career in software development' %}
+            </p>
+          </div>
+          <div class="portfolio-card lg:mx-24 lg:p-8">
+            <h4 class="text-2xl mt-2 font-bold">{% trans 'Description:' %}</h4>
+            <p>
+              <!-- prettier-ignore -->
+              {% trans 'In this role I help students to develop their projects and portfolio. This includes advising them on how to manage the development of their project and how to approach problem solving.' %}
+            </p>
+            <p>
+              <!-- prettier-ignore -->
+              {% trans 'This includes a career preparation session where I answer any industry-related questions that students have and perform a mock interview by presenting them with common interview problems' %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label
+      for="de-carousel-1"
+      class="prev de-control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+      >‹</label
+    >
+    <label
+      for="de-carousel-3"
+      class="next de-control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+      >›</label
+    >
+
+    <!--Slide 3-->
+    <input
+      class="de-carousel-open"
+      type="radio"
+      id="de-carousel-3"
+      name="de-carousel"
+      aria-hidden="true"
+      hidden=""
+    />
+    <div class="de-carousel-item absolute opacity-0" style="height: 50vh">
+      <div
+        class="h-full w-full bg-cornflowerblue-50 flex items-center text-center"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+          <!-- prettier-ignore -->
+          <div
+            class="portfolio-card lg:mx-24 lg:p-8"
+            style="
+              background-image: url({%static 'images/coding-screen.jpg'%});
+              background-size: cover;
+            "
+          ></div>
+          <div class="portfolio-card lg:mx-24 lg:p-8">
+            <h4 class="text-2xl mt-2 font-bold">
+              {% trans 'Role:' %}
+              <span class="font-normal">Software Developer</span>
+            </h4>
+            <p class="flex pt-6">
+              <!-- prettier-ignore -->
+              {% trans 'I was tasked with a number software projects during my time in Code Institute. The primary projects that I worked on were the careers site used to collect tech related jobs to help students and the learning platform that the students used to access the material which was built with Django, MySQL and MongoDB' %}
+            </p>
+          </div>
+          <div class="portfolio-card lg:mx-24 lg:p-8">
+            <h4 class="text-2xl mt-2 font-bold">{% trans 'Description:' %}</h4>
+            <p>
+              <!-- prettier-ignore -->
+              {% trans 'I worked on developing new features to enhance our students\' learning experience. We occansionally hired external companies to work on additional functionality and I wordked closely with them to ensure that they understood the requirements and delivered their work on time. For deployments we used Travis and EC2s' %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label
+      for="de-carousel-2"
+      class="prev de-control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+      >‹</label
+    >
+    <label
+      for="de-carousel-4"
+      class="next de-control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+      >›</label
+    >
+    <!--Slide 4-->
+    <input
+      class="de-carousel-open"
+      type="radio"
+      id="de-carousel-4"
+      name="de-carousel"
+      aria-hidden="true"
+      hidden=""
+    />
+    <div class="de-carousel-item absolute opacity-0" style="height: 50vh">
+      <div
+        class="h-full w-full bg-cornflowerblue-50 flex items-center text-center"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+          <!-- prettier-ignore -->
+          <div
+            class="portfolio-card lg:mx-24 lg:p-8"
+            style="
+              background-image: url({%static 'images/coding-screen.jpg'%});
+              background-size: cover;
+            "
+          ></div>
+          <div class="portfolio-card lg:mx-24 lg:p-8">
+            <h4 class="text-2xl mt-2 font-bold">
+              {% trans 'Role:' %}
+              <span class="font-normal">Product Developer</span>
+            </h4>
+            <p class="flex pt-6">
+              <!-- prettier-ignore -->
+              {% trans 'My primary role in Code Institute required me to write and deliver learning material to our students. Our goal was to provide a learning experience that was consistent and logical, and ensure that each piece of the course fed into an over arching narrative' %}
+            </p>
+          </div>
+          <div class="portfolio-card lg:mx-24 lg:p-8">
+            <h4 class="text-2xl mt-2 font-bold">{% trans 'Description:' %}</h4>
+            <p>
+              <!-- prettier-ignore -->
+              {% trans 'I worked closely with our Programme Director to create relevant learning material to help our students break into their new careers as software developers. This required me to create walkthrough projects, record myself building them and talk the students through each step of the process. This also required continuous planning to ensure that course remained relevant in an ever shifting field' %}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label
+      for="de-carousel-3"
+      class="prev de-control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"
+      >‹</label
+    >
+    <label
+      for="de-carousel-1"
+      class="next de-control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"
+      >›</label
+    >
+
+    <!-- Add additional indicators for each slide-->
+    <ol class="de-carousel-indicators">
+      <li class="inline-block mr-3">
+        <label
+          for="de-carousel-1"
+          class="de-carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+          >•</label
+        >
+      </li>
+      <li class="inline-block mr-3">
+        <label
+          for="de-carousel-2"
+          class="de-carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+          >•</label
+        >
+      </li>
+      <li class="inline-block mr-3">
+        <label
+          for="de-carousel-3"
+          class="de-carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+          >•</label
+        >
+      </li>
+      <li class="inline-block mr-3">
+        <label
+          for="de-carousel-4"
+          class="de-carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700"
+          >•</label
+        >
+      </li>
+    </ol>
+  </div>
+</div>

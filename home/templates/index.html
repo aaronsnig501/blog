@@ -164,7 +164,14 @@
       </section>
       <section class="bg-cornflowerblue-50 pt-20 lg:px-12">
         <h2 class="text-3xl text-center mb-8">{% trans 'Portfolio' %}</h2>
-        {% include 'partials/ci-carousel.html' %}
+        <!-- prettier-ignore -->
+        <div id="decyphr-carousel" style="height:500px">
+          {% include 'partials/decyphr-carousel.html' %}
+        </div>
+
+        <div id="ci-carousel" style="height: 500px">
+          {% include 'partials/ci-carousel.html' %}
+        </div>
       </section>
     </div>
     <script>
