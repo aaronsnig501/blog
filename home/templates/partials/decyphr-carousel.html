@@ -53,23 +53,19 @@
           ></div>
           <div class="portfolio-card lg:mx-24 lg:p-8">
             <h4 class="text-2xl mt-2 font-bold">
-              {% trans 'Role:' %}
-              <span class="font-normal">Mentor</span>
+              {% trans 'Project:' %}
+              <span class="font-normal">Learnr</span>
             </h4>
             <p class="flex pt-6">
               <!-- prettier-ignore -->
-              {% trans 'After having worked as a programme developer in Code Institute, I moved abroad to be with my then girlfriend and now wife. Mentoring allowed me to continue working with students and helping to guide them through their learning and empower them to create the strongest possible portfolio to help launch their new career in software development' %}
+              {% trans 'The latest addition to Decyphr family. This is an learning platform for spoken languages. At the moment this is targetted at Brazilians that want to learn English, but will be expanded upon with further languages in future' %}
             </p>
           </div>
           <div class="portfolio-card lg:mx-24 lg:p-8">
             <h4 class="text-2xl mt-2 font-bold">{% trans 'Description:' %}</h4>
             <p>
               <!-- prettier-ignore -->
-              {% trans 'In this role I help students to develop their projects and portfolio. This includes advising them on how to manage the development of their project and how to approach problem solving.' %}
-            </p>
-            <p>
-              <!-- prettier-ignore -->
-              {% trans 'This includes a career preparation session where I answer any industry-related questions that students have and perform a mock interview by presenting them with common interview problems' %}
+              {% trans 'Learnr is built in Django with a Tailwind UI and is deployed on EC2. This project currently displays the learning material to the student for them to read the material, but I am also working on integration with Twilio Video which will allow me to give lessons to students so they can have interactive lessons and conversations will real people' %}
             </p>
           </div>
         </div>
@@ -103,26 +99,25 @@
           <!-- prettier-ignore -->
           <div
             class="portfolio-card lg:mx-24 lg:p-8"
-            style="
-              background-image: url({%static 'images/coding-screen.jpg'%});
-              background-size: cover;
-            "
-          ></div>
+            style="background-color: #303c6c"
+          >
+          <img src="{%static 'images/readr.png'%}" />
+        </div>
           <div class="portfolio-card lg:mx-24 lg:p-8">
             <h4 class="text-2xl mt-2 font-bold">
-              {% trans 'Role:' %}
-              <span class="font-normal">Software Developer</span>
+              {% trans 'Project:' %}
+              <span class="font-normal">Readr</span>
             </h4>
             <p class="flex pt-6">
               <!-- prettier-ignore -->
-              {% trans 'I was tasked with a number software projects during my time in Code Institute. The primary projects that I worked on were the careers site used to collect tech related jobs to help students and the learning platform that the students used to access the material which was built with Django, MySQL and MongoDB' %}
+              {% trans 'Readr is intented to assist language learners with reading books written in their new language. The idea is that a new language learner translates phrases from books that they don\'t understand and Readr translates the text, creates an audio sample and provides a syntactical breakdown of the text and enables learners to practice the phrases they have translated' %}
             </p>
           </div>
           <div class="portfolio-card lg:mx-24 lg:p-8">
             <h4 class="text-2xl mt-2 font-bold">{% trans 'Description:' %}</h4>
             <p>
               <!-- prettier-ignore -->
-              {% trans 'I worked on developing new features to enhance our students\' learning experience. We occansionally hired external companies to work on additional functionality and I wordked closely with them to ensure that they understood the requirements and delivered their work on time. For deployments we used Travis and EC2s' %}
+              {% trans 'Readr is written in Django and NextJS and hosted on EC2 and Netlify respectively. All text is translated using Google Translate and Google\'s Language service to get a breakdown of the text to enable learners to see which words are adjectives, verbs, nouns, etc. and Google Books is used to enable students to manage their library to keep track of what they are reading' %}
             </p>
           </div>
         </div>
@@ -154,27 +149,25 @@
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
           <!-- prettier-ignore -->
           <div
-            class="portfolio-card lg:mx-24 lg:p-8"
-            style="
-              background-image: url({%static 'images/coding-screen.jpg'%});
-              background-size: cover;
-            "
-          ></div>
+            class="portfolio-card h-xlg lg:mx-24"
+          >
+          <img class="w-full h-full" src="{%static 'images/i18nr.png'%}" />
+        </div>
           <div class="portfolio-card lg:mx-24 lg:p-8">
             <h4 class="text-2xl mt-2 font-bold">
-              {% trans 'Role:' %}
-              <span class="font-normal">Product Developer</span>
+              {% trans 'Project:' %}
+              <span class="font-normal">i18nr</span>
             </h4>
             <p class="flex pt-6">
               <!-- prettier-ignore -->
-              {% trans 'My primary role in Code Institute required me to write and deliver learning material to our students. Our goal was to provide a learning experience that was consistent and logical, and ensure that each piece of the course fed into an over arching narrative' %}
+              {% trans 'I was working with translations and had configured APIs for Google Translation and manually manually copying and pasting code into Google Translate which was time consuming and error-prone. i18nr takes text or a file as a parameter and translates it into the target languages' %}
             </p>
           </div>
           <div class="portfolio-card lg:mx-24 lg:p-8">
             <h4 class="text-2xl mt-2 font-bold">{% trans 'Description:' %}</h4>
             <p>
               <!-- prettier-ignore -->
-              {% trans 'I worked closely with our Programme Director to create relevant learning material to help our students break into their new careers as software developers. This required me to create walkthrough projects, record myself building them and talk the students through each step of the process. This also required continuous planning to ensure that course remained relevant in an ever shifting field' %}
+              {% trans 'i18nr is written in Typescript using Heroku\'s oclif with a Django backend hosted on EC2 and the tool is available on NPM for installation within any project and is configurable to work as an npm command to translate your JSON, YAML or PHP files' %}
             </p>
           </div>
         </div>
