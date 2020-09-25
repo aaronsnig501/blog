@@ -6,49 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <style>
-      .carousel-open:checked + .carousel-item {
-        position: static;
-        opacity: 100;
-      }
-      .carousel-item {
-        -webkit-transition: opacity 0.6s ease-out;
-        transition: opacity 0.6s ease-out;
-      }
-      #carousel-1:checked ~ .control-1,
-      #carousel-2:checked ~ .control-2,
-      #carousel-3:checked ~ .control-3 {
-        display: block;
-      }
-      .carousel-indicators {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        bottom: 2%;
-        left: 0;
-        right: 0;
-        text-align: center;
-        z-index: 10;
-      }
-      #carousel-1:checked
-        ~ .control-1
-        ~ .carousel-indicators
-        li:nth-child(1)
-        .carousel-bullet,
-      #carousel-2:checked
-        ~ .control-2
-        ~ .carousel-indicators
-        li:nth-child(2)
-        .carousel-bullet,
-      #carousel-3:checked
-        ~ .control-3
-        ~ .carousel-indicators
-        li:nth-child(3)
-        .carousel-bullet {
-        color: #2b6cb0; /*Set to match the Tailwind colour you want the active one to be */
-      }
-    </style>
   </head>
   <body>
     <div>
@@ -222,10 +179,12 @@
               <div
                 class="h-full w-full flex items-center justify-center bg-steelblue-100 text-white text-5xl text-center"
               >
-                <img
-                  class="w-64"
-                  src="{% static 'images/code-institute.svg' %}"
-                />
+                <a href="https://codeinstitute.net" target="_blank">
+                  <img
+                    class="w-64 block"
+                    src="{% static 'images/code-institute.svg' %}"
+                  />
+                </a>
               </div>
             </div>
             <label
@@ -308,9 +267,41 @@
             />
             <div class="carousel-item absolute opacity-0" style="height: 50vh">
               <div
-                class="block h-full w-full bg-green-500 text-white text-5xl text-center"
+                class="h-full w-full bg-steelblue-100 flex items-center text-center"
               >
-                Slide 3
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+                  <!-- prettier-ignore -->
+                  <div
+                    class="portfolio-card lg:mx-24 lg:p-8"
+                    style="
+                      background-image: url({%static 'images/coding-screen.jpg'%});
+                      background-size: cover;
+                    "
+                  ></div>
+                  <div class="portfolio-card lg:mx-24 lg:p-8">
+                    <h4 class="text-2xl mt-2 font-bold">
+                      {% trans 'Role:' %}
+                      <span class="font-normal">Software Developer</span>
+                    </h4>
+                    <p class="flex pt-6">
+                      <!-- prettier-ignore -->
+                      {% trans 'I was tasked with a number software projects during my time in Code Institute. The primary projects that I worked on were the careers site used to collect tech related jobs to help students and the learning platform that the students used to access the material' %}
+                    </p>
+                  </div>
+                  <div class="portfolio-card lg:mx-24 lg:p-8">
+                    <h4 class="text-2xl mt-2 font-bold">
+                      {% trans 'Description:' %}
+                    </h4>
+                    <p>
+                      <!-- prettier-ignore -->
+                      {% trans 'In this role I help students to develop their projects and portfolio. This includes advising them on how to manage the development of their project and how to approach problem solving.' %}
+                    </p>
+                    <p>
+                      <!-- prettier-ignore -->
+                      {% trans 'This includes a career preparation session where I answer any industry-related questions that students have and perform a mock interview by presenting them with common interview problems' %}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             <label
